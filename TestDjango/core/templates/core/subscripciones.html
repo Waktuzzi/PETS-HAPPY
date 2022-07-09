@@ -1,0 +1,131 @@
+{% extends 'core/plantilla_2.html' %}
+{% load static %}
+{% block contenido %}
+
+<div class="container">
+    <div id="pngA">
+        <img src="https://364982.smushcdn.com/2496949/wp-content/uploads/2021/09/pets-dog-turtle-bird.png?lossy=1&strip=1&webp=1"
+            class="img-fluid" alt="...">
+    </div>
+
+    <div id="titulo2">
+        <h1>DONACIONES</h1>
+        <h1>/</h1>
+        <h2>para un mejor techo para ellos</h2>
+    </div>
+    <div id="cartas">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="{% static 'core/img/iconos/logo_ayuda.png' %}" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor vero, laboriosam
+                    facilis, culpa ratione eligendi doloremque assumenda aliquid nemo, consequuntur eius aperiam quia
+                    nesciunt vel.</p>
+                <br>
+                <label for="m"> ¡Pinche aqui si desea estar subscrito!</label>
+                <input type="checkbox" id="m">
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="{% static 'core/img/iconos/logo_ayuda.png' %}" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe unde tenetur vero
+                    nostrum modi exercitationem iusto reiciendis suscipit facilis quos!</p>
+                <br>
+                <label for="mm"> ¡Pinche aqui si desea estar subscrito!</label>
+                <input type="checkbox" id="mm">
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="{% static 'core/img/iconos/logo_ayuda.png' %}" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus animi
+                    consectetur autem pariatur suscipit eligendi earum, delectus placeat facilis harum repudiandae vel?
+                </p>
+                <br>
+                <label for="mm"> ¡Pinche aqui si desea estar subscrito!</label>
+                <input type="checkbox" id="mmm">
+
+
+            </div>
+        </div>
+    </div>
+    <br>
+    <div id="cuadros">
+        <div id="datosT">
+            <div id="imgpay">
+                <img src="https://www.pethome.cl/img/webpay.png" alt="...">
+            </div>
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">Nombres</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                    <div class="valid-feedback">
+                        Valido!
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                    <div class="valid-feedback">
+                        Valido!
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustomUsername" class="form-label">Pin de seguridad</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">cvc</span>
+                        <input type="text" class="form-control" id="validationCustomUsername"
+                            aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                            Invalido!
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="validationCustom03" class="form-label">N° tarjeta</label>
+                    <input type="text" class="form-control" id="validationCustom03" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid city.
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="validationCustom04" class="form-label">Region</label>
+                    <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">...</option>
+                        <option>Región Metropolitana de Santiago.</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please select a valid state.
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="validationCustom05" class="form-label">Codigo postal</label>
+                    <input type="text" class="form-control" id="validationCustom05" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid zip.
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck">
+                        Acepta los terminos y condiciones.
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck">
+                        Desea estar subscrito y participar con donaciones?
+                        </label>
+                    </div>
+                </div>
+                <div id="botonesC">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button class="btn btn-primary" type="submit">finalizar subcripcion</button>
+                </div>
+            </form>
+            <br>
+        </div>
+    </div>
+</div>
+{% endblock %}

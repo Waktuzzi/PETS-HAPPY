@@ -1,0 +1,1016 @@
+{% extends 'core/plantilla_2.html' %}
+{% load static %}
+{% block contenido %}
+<div id="pagina_act">
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'home' %}">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Peces</li>
+        </ol>
+    </nav>
+</div>
+
+<div id="productos">
+    <div id="intermedio">
+        <img src="{% static 'core/img/promo-peces.jpg' %}" alt="" width="100%">
+    </div>
+    <br>
+    <h1>Comida</h1>
+    <h4>Encuentra comida para diferentes tipos de especies.</h4>
+    <div id="linea-comida">
+        <div class="row row-cols-2 row-cols-md-4 row-cols-xl-6 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/peces/comida-peces-1.1.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/comida-peces-1.2.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Tetra Pond Sticks 4 L</h5>
+                        <p class="card-text">Tetra Pond Sticks, en formato de 4 litros, es un alimento para peces de
+                            estanque como carpas doradas, que se ablanda rápidamente para una alimentación sencilla.</p>
+                        <p1 class="card-text">Alimento para peces de estanque como carpas doradas,
+                            que se ablanda rápidamente para una alimentación sencilla.</p1>
+                        <h6 class="card-text">Stock: 20</h6>
+                        <h6 class="card-text">$20.500</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/peces/comida-peces-2.1.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/comida-peces-2.2.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Supervit Premium hojuelas 1000 ml 200 gr</h5>
+                        <p class="card-text">alimento de escamas multicomplemental con beta glucano. Un alimento
+                            completo en forma de escamas, destinado para la alimentación diaria de los peces
+                            omnívoros de acuarios.</p>
+                        <p1 class="card-text">Alimento completo en forma de escamas,
+                            para la alimentación diaria de los peces omnívoros de acuarios.</p1>
+                        <h6 class="card-text">Stock: 22</h6>
+                        <h6 class="card-text">$21.900</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/peces/comida-peces-3.1.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/comida-peces-3.2.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Sera Wels Chips 95 gr o 250 ml</h5>
+                        <p class="card-text">Alimento en pastillas delgadas que duran mas de 24 hrs en el acuario,
+                            ideal para peces de fondo.</p>
+                        <p1 class="card-text">Alimento en pastillas delgadas que duran mas de 24 hrs en el acuario,
+                            ideal para peces de fondo.</p1>
+                        <h6 class="card-text">Stock: 17</h6>
+                        <h6 class="card-text">$14.900</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/peces/comida-peces-1.1.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/comida-peces-1.2.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Tetra Pond Sticks 4 L</h5>
+                        <p class="card-text">Tetra Pond Sticks, en formato de 4 litros, es un alimento para peces de
+                            estanque como carpas doradas, que se ablanda rápidamente para una alimentación sencilla.</p>
+                        <p1 class="card-text">Alimento para peces de estanque como carpas doradas,
+                            que se ablanda rápidamente para una alimentación sencilla.</p1>
+                        <h6 class="card-text">Stock: 20</h6>
+                        <h6 class="card-text">$20.500</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/peces/comida-peces-2.1.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/comida-peces-2.2.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Supervit Premium hojuelas 1000 ml 200 gr</h5>
+                        <p class="card-text">alimento de escamas multicomplemental con beta glucano. Un alimento
+                            completo en forma de escamas, destinado para la alimentación diaria de los peces
+                            omnívoros de acuarios.</p>
+                        <p1 class="card-text">Alimento completo en forma de escamas,
+                            para la alimentación diaria de los peces omnívoros de acuarios.</p1>
+                        <h6 class="card-text">Stock: 22</h6>
+                        <h6 class="card-text">$21.900</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/peces/comida-peces-3.1.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/comida-peces-3.2.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Sera Wels Chips 95 gr o 250 ml</h5>
+                        <p class="card-text">Alimento en pastillas delgadas que duran mas de 24 hrs en el acuario,
+                            ideal para peces de fondo.</p>
+                        <p1 class="card-text">Alimento en pastillas delgadas que duran mas de 24 hrs en el acuario,
+                            ideal para peces de fondo.</p1>
+                        <h6 class="card-text">Stock: 17</h6>
+                        <h6 class="card-text">$14.900</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/peces/comida-peces-1.1.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/comida-peces-1.2.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Tetra Pond Sticks 4 L</h5>
+                        <p class="card-text">Tetra Pond Sticks, en formato de 4 litros, es un alimento para peces de
+                            estanque como carpas doradas, que se ablanda rápidamente para una alimentación sencilla.</p>
+                        <p1 class="card-text">Alimento para peces de estanque como carpas doradas,
+                            que se ablanda rápidamente para una alimentación sencilla.</p1>
+                        <h6 class="card-text">Stock: 20</h6>
+                        <h6 class="card-text">$20.500</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/peces/comida-peces-2.1.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/comida-peces-2.2.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Supervit Premium hojuelas 1000 ml 200 gr</h5>
+                        <p class="card-text">alimento de escamas multicomplemental con beta glucano. Un alimento
+                            completo en forma de escamas, destinado para la alimentación diaria de los peces
+                            omnívoros de acuarios.</p>
+                        <p1 class="card-text">Alimento completo en forma de escamas,
+                            para la alimentación diaria de los peces omnívoros de acuarios.</p1>
+                        <h6 class="card-text">Stock: 22</h6>
+                        <h6 class="card-text">$21.900</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/peces/comida-peces-3.1.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/comida-peces-3.2.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Sera Wels Chips 95 gr o 250 ml</h5>
+                        <p class="card-text">Alimento en pastillas delgadas que duran mas de 24 hrs en el acuario,
+                            ideal para peces de fondo.</p>
+                        <p1 class="card-text">Alimento en pastillas delgadas que duran mas de 24 hrs en el acuario,
+                            ideal para peces de fondo.</p1>
+                        <h6 class="card-text">Stock: 17</h6>
+                        <h6 class="card-text">$14.900</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/peces/comida-peces-1.1.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/comida-peces-1.2.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Tetra Pond Sticks 4 L</h5>
+                        <p class="card-text">Tetra Pond Sticks, en formato de 4 litros, es un alimento para peces de
+                            estanque como carpas doradas, que se ablanda rápidamente para una alimentación sencilla.</p>
+                        <p1 class="card-text">Alimento para peces de estanque como carpas doradas,
+                            que se ablanda rápidamente para una alimentación sencilla.</p1>
+                        <h6 class="card-text">Stock: 20</h6>
+                        <h6 class="card-text">$20.500</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/peces/comida-peces-2.1.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/comida-peces-2.2.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Supervit Premium hojuelas 1000 ml 200 gr</h5>
+                        <p class="card-text">alimento de escamas multicomplemental con beta glucano. Un alimento
+                            completo en forma de escamas, destinado para la alimentación diaria de los peces
+                            omnívoros de acuarios.</p>
+                        <p1 class="card-text">Alimento completo en forma de escamas,
+                            para la alimentación diaria de los peces omnívoros de acuarios.</p1>
+                        <h6 class="card-text">Stock: 22</h6>
+                        <h6 class="card-text">$21.900</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/peces/comida-peces-3.1.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/comida-peces-3.2.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Sera Wels Chips 95 gr o 250 ml</h5>
+                        <p class="card-text">Alimento en pastillas delgadas que duran mas de 24 hrs en el acuario,
+                            ideal para peces de fondo.</p>
+                        <p1 class="card-text">Alimento en pastillas delgadas que duran mas de 24 hrs en el acuario,
+                            ideal para peces de fondo.</p1>
+                        <h6 class="card-text">Stock: 17</h6>
+                        <h6 class="card-text">$14.900</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="intermedio">
+        <img src="{% static 'core/img/despacho.jpg' %}" alt="" width="100%">
+    </div>
+    <h1>Acesorios pecera</h1>
+    <h4>Encuentra todo tipo de productos para decorar tu pecera.</h4>
+    <div id="linea-accesorios">
+        <div class="row row-cols-2 row-cols-md-4 row-cols-xl-6 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/peces/accesorio-peces-1.1.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/accesorio-peces-1.2.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Boyu Adorno para acuario Naufragio</h5>
+                        <p class="card-text">Boyu Adorno para acuario Naufragio forma parte del enriquecimiento
+                            ambiental de tu pecera, para que tu pez se sienta feliz y cómodo.</p>
+                        <p1 class="card-text">Adorno para acuario Naufragio forma parte del enriquecimiento
+                            ambiental de tu pecera.</p1>
+                        <h6 class="card-text">Stock: 12</h6>
+                        <h6 class="card-text">$3.990</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/peces/accesorio-peces-2.1.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/accesorio-peces-2.2.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Boyu Montaña Con Musgo</h5>
+                        <p class="card-text">Boyu Montaña con Musgo es un accesorio decorativo para acuarios para
+                            mejorar como luce tu acuario y ofrecer zonas seguras a tus peces.</p>
+                        <p1 class="card-text">Adorno para acuario Naufragio forma parte del enriquecimiento
+                            ambiental de tu pecera.</p1>
+                        <h6 class="card-text">Stock: 16</h6>
+                        <h6 class="card-text">$2.500</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/peces/accesorio-peces-3.1.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/accesorio-peces-3.2.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/accesorio-peces-3.3.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/accesorio-peces-3.4.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">MPets Pack Plantas Decorativas Acuario</h5>
+                        <p class="card-text">MPets Pack Plantas Decorativas Acuario son unas plantas artificiales
+                            para decorar acuarios de agua dulce o salada.</p>
+                        <p1 class="card-text">Pack Plantas artificiales Decorativas Acuario.</p1>
+                        <h6 class="card-text">Stock: 10</h6>
+                        <h6 class="card-text">$6.500</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/peces/accesorio-peces-1.1.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/accesorio-peces-1.2.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Boyu Adorno para acuario Naufragio</h5>
+                        <p class="card-text">Boyu Adorno para acuario Naufragio forma parte del enriquecimiento
+                            ambiental de tu pecera, para que tu pez se sienta feliz y cómodo.</p>
+                        <p1 class="card-text">Adorno para acuario Naufragio forma parte del enriquecimiento
+                            ambiental de tu pecera.</p1>
+                        <h6 class="card-text">Stock: 12</h6>
+                        <h6 class="card-text">$3.990</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/peces/accesorio-peces-2.1.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/accesorio-peces-2.2.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Boyu Montaña Con Musgo</h5>
+                        <p class="card-text">Boyu Montaña con Musgo es un accesorio decorativo para acuarios para
+                            mejorar como luce tu acuario y ofrecer zonas seguras a tus peces.</p>
+                        <p1 class="card-text">Adorno para acuario Naufragio forma parte del enriquecimiento
+                            ambiental de tu pecera.</p1>
+                        <h6 class="card-text">Stock: 16</h6>
+                        <h6 class="card-text">$2.500</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/peces/accesorio-peces-3.1.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/accesorio-peces-3.2.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/accesorio-peces-3.3.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/accesorio-peces-3.4.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">MPets Pack Plantas Decorativas Acuario</h5>
+                        <p class="card-text">MPets Pack Plantas Decorativas Acuario son unas plantas artificiales
+                            para decorar acuarios de agua dulce o salada.</p>
+                        <p1 class="card-text">Pack Plantas artificiales Decorativas Acuario.</p1>
+                        <h6 class="card-text">Stock: 10</h6>
+                        <h6 class="card-text">$6.500</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/peces/accesorio-peces-1.1.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/accesorio-peces-1.2.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Boyu Adorno para acuario Naufragio</h5>
+                        <p class="card-text">Boyu Adorno para acuario Naufragio forma parte del enriquecimiento
+                            ambiental de tu pecera, para que tu pez se sienta feliz y cómodo.</p>
+                        <p1 class="card-text">Adorno para acuario Naufragio forma parte del enriquecimiento
+                            ambiental de tu pecera.</p1>
+                        <h6 class="card-text">Stock: 12</h6>
+                        <h6 class="card-text">$3.990</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/peces/accesorio-peces-2.1.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/accesorio-peces-2.2.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Boyu Montaña Con Musgo</h5>
+                        <p class="card-text">Boyu Montaña con Musgo es un accesorio decorativo para acuarios para
+                            mejorar como luce tu acuario y ofrecer zonas seguras a tus peces.</p>
+                        <p1 class="card-text">Adorno para acuario Naufragio forma parte del enriquecimiento
+                            ambiental de tu pecera.</p1>
+                        <h6 class="card-text">Stock: 16</h6>
+                        <h6 class="card-text">$2.500</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/peces/accesorio-peces-3.1.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/accesorio-peces-3.2.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/accesorio-peces-3.3.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/accesorio-peces-3.4.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">MPets Pack Plantas Decorativas Acuario</h5>
+                        <p class="card-text">MPets Pack Plantas Decorativas Acuario son unas plantas artificiales
+                            para decorar acuarios de agua dulce o salada.</p>
+                        <p1 class="card-text">Pack Plantas artificiales Decorativas Acuario.</p1>
+                        <h6 class="card-text">Stock: 10</h6>
+                        <h6 class="card-text">$6.500</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/peces/accesorio-peces-1.1.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/accesorio-peces-1.2.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Boyu Adorno para acuario Naufragio</h5>
+                        <p class="card-text">Boyu Adorno para acuario Naufragio forma parte del enriquecimiento
+                            ambiental de tu pecera, para que tu pez se sienta feliz y cómodo.</p>
+                        <p1 class="card-text">Adorno para acuario Naufragio forma parte del enriquecimiento
+                            ambiental de tu pecera.</p1>
+                        <h6 class="card-text">Stock: 12</h6>
+                        <h6 class="card-text">$3.990</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/peces/accesorio-peces-2.1.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/accesorio-peces-2.2.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Boyu Montaña Con Musgo</h5>
+                        <p class="card-text">Boyu Montaña con Musgo es un accesorio decorativo para acuarios para
+                            mejorar como luce tu acuario y ofrecer zonas seguras a tus peces.</p>
+                        <p1 class="card-text">Adorno para acuario Naufragio forma parte del enriquecimiento
+                            ambiental de tu pecera.</p1>
+                        <h6 class="card-text">Stock: 16</h6>
+                        <h6 class="card-text">$2.500</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/peces/accesorio-peces-3.1.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/accesorio-peces-3.2.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/accesorio-peces-3.3.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/accesorio-peces-3.4.jpg' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">MPets Pack Plantas Decorativas Acuario</h5>
+                        <p class="card-text">MPets Pack Plantas Decorativas Acuario son unas plantas artificiales
+                            para decorar acuarios de agua dulce o salada.</p>
+                        <p1 class="card-text">Pack Plantas artificiales Decorativas Acuario.</p1>
+                        <h6 class="card-text">Stock: 10</h6>
+                        <h6 class="card-text">$6.500</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="intermedio">
+        <img src="{% static 'core/img/banner-pecera.jpg' %}" alt="" width="100%">
+    </div>
+    <h1>Acuarios</h1>
+    <h4>Encuentra diferentes tipos de peceras para darle el mejor hogar a tu pez.</h4>
+    <div id="linea-acuarios">
+        <div class="row row-cols-2 row-cols-md-4 row-cols-xl-6 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/peces/acuario-peces-1.1.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/acuario-peces-1.2.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Fluval flex 123L negro</h5>
+                        <p class="card-text">Kit de acuario de agua dulce de 123 litros</p>
+                        <p1 class="card-text">Kit de acuario de agua dulce de 123 litros</p1>
+                        <h6 class="card-text">Stock: 31</h6>
+                        <h6 class="card-text">$440.000</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/peces/acuario-peces-2.1.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/acuario-peces-2.2.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Eheim Aquastar 54L LED</h5>
+                        <p class="card-text">Set de acuario completo, perfecto para alguien que comienza el hobby.</p>
+                        <p1 class="card-text">Set de acuario completo, perfecto para alguien que comienza el hobby.</p1>
+                        <h6 class="card-text">Stock: 24</h6>
+                        <h6 class="card-text">$159.000</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/peces/acuario-peces-3.1.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/acuario-peces-3.2.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/acuario-peces-3.3.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Sunsun Acuario Con Filtro Y Luz LED 52 Litros</h5>
+                        <p class="card-text">Sunsun Acuario 52 Litros, para peces de agua dulce
+                            fabricado con acrílico de alta calidad y excelente transparencia, con esquinas frontales
+                            redondeadas y luz LED de distintos colores.</p>
+                        <p1 class="card-text">Acuario 52 Litros para peces de agua dulce, con esquinas frontales
+                            redondeadas y luz LED.</p1>
+                        <h6 class="card-text">Stock: 26</h6>
+                        <h6 class="card-text">$130.000</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/peces/acuario-peces-1.1.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/acuario-peces-1.2.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Fluval flex 123L negro</h5>
+                        <p class="card-text">Kit de acuario de agua dulce de 123 litros</p>
+                        <p1 class="card-text">Kit de acuario de agua dulce de 123 litros</p1>
+                        <h6 class="card-text">Stock: 31</h6>
+                        <h6 class="card-text">$440.000</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/peces/acuario-peces-2.1.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/acuario-peces-2.2.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Eheim Aquastar 54L LED</h5>
+                        <p class="card-text">Set de acuario completo, perfecto para alguien que comienza el hobby.</p>
+                        <p1 class="card-text">Set de acuario completo, perfecto para alguien que comienza el hobby.</p1>
+                        <h6 class="card-text">Stock: 24</h6>
+                        <h6 class="card-text">$159.000</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/peces/acuario-peces-3.1.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/acuario-peces-3.2.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/acuario-peces-3.3.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Sunsun Acuario Con Filtro Y Luz LED 52 Litros</h5>
+                        <p class="card-text">Sunsun Acuario 52 Litros, para peces de agua dulce
+                            fabricado con acrílico de alta calidad y excelente transparencia, con esquinas frontales
+                            redondeadas y luz LED de distintos colores.</p>
+                        <p1 class="card-text">Acuario 52 Litros para peces de agua dulce, con esquinas frontales
+                            redondeadas y luz LED.</p1>
+                        <h6 class="card-text">Stock: 26</h6>
+                        <h6 class="card-text">$130.000</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/peces/acuario-peces-1.1.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/acuario-peces-1.2.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Fluval flex 123L negro</h5>
+                        <p class="card-text">Kit de acuario de agua dulce de 123 litros</p>
+                        <p1 class="card-text">Kit de acuario de agua dulce de 123 litros</p1>
+                        <h6 class="card-text">Stock: 31</h6>
+                        <h6 class="card-text">$440.000</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/peces/acuario-peces-2.1.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/acuario-peces-2.2.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Eheim Aquastar 54L LED</h5>
+                        <p class="card-text">Set de acuario completo, perfecto para alguien que comienza el hobby.</p>
+                        <p1 class="card-text">Set de acuario completo, perfecto para alguien que comienza el hobby.</p1>
+                        <h6 class="card-text">Stock: 24</h6>
+                        <h6 class="card-text">$159.000</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/peces/acuario-peces-3.1.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/acuario-peces-3.2.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/acuario-peces-3.3.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Sunsun Acuario Con Filtro Y Luz LED 52 Litros</h5>
+                        <p class="card-text">Sunsun Acuario 52 Litros, para peces de agua dulce
+                            fabricado con acrílico de alta calidad y excelente transparencia, con esquinas frontales
+                            redondeadas y luz LED de distintos colores.</p>
+                        <p1 class="card-text">Acuario 52 Litros para peces de agua dulce, con esquinas frontales
+                            redondeadas y luz LED.</p1>
+                        <h6 class="card-text">Stock: 26</h6>
+                        <h6 class="card-text">$130.000</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/peces/acuario-peces-1.1.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/acuario-peces-1.2.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Fluval flex 123L negro</h5>
+                        <p class="card-text">Kit de acuario de agua dulce de 123 litros</p>
+                        <p1 class="card-text">Kit de acuario de agua dulce de 123 litros</p1>
+                        <h6 class="card-text">Stock: 31</h6>
+                        <h6 class="card-text">$440.000</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/peces/acuario-peces-2.1.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/acuario-peces-2.2.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Eheim Aquastar 54L LED</h5>
+                        <p class="card-text">Set de acuario completo, perfecto para alguien que comienza el hobby.</p>
+                        <p1 class="card-text">Set de acuario completo, perfecto para alguien que comienza el hobby.</p1>
+                        <h6 class="card-text">Stock: 24</h6>
+                        <h6 class="card-text">$159.000</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/peces/acuario-peces-3.1.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/acuario-peces-3.2.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/peces/acuario-peces-3.3.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Sunsun Acuario Con Filtro Y Luz LED 52 Litros</h5>
+                        <p class="card-text">Sunsun Acuario 52 Litros, para peces de agua dulce
+                            fabricado con acrílico de alta calidad y excelente transparencia, con esquinas frontales
+                            redondeadas y luz LED de distintos colores.</p>
+                        <p1 class="card-text">Acuario 52 Litros para peces de agua dulce, con esquinas frontales
+                            redondeadas y luz LED.</p1>
+                        <h6 class="card-text">Stock: 26</h6>
+                        <h6 class="card-text">$130.000</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

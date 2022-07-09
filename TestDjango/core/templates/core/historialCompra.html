@@ -1,0 +1,30 @@
+{% extends 'core/plantilla_2.html' %}
+{% load static %}
+{% block contenido %}
+<div class="container">
+    <div id="tabla">
+        <h1>Listado de Compras</h1>
+        &nbsp;|&nbsp;
+        <a href="{% url 'añadirCompra' %}">Añadir Producto</a>
+    </div>
+
+    <table class="table table-hover">
+        <tr>
+            <th>Codigo</th>
+            <th>Producto</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+            <th>Cancelar</th>
+        </tr>
+        {% for i in Historial %}
+        <tr>
+            <td>#{{i.id}}</td>
+            <td>{{i.nombre}}</td>
+            <td>${{i.precio}}</td>
+            <td>{{i.cantidad}}</td>
+            <td><a href="{% url 'elimirnarCompra' i.id %}">Cancelar Compra</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}

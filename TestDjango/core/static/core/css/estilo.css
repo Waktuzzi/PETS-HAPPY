@@ -1,0 +1,29 @@
+h1{
+    color: rgb(255, 255, 255);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header, footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    height: 20vh;
+    width: 100%;
+}
+
+nav>a, nav{
+    color: #ffffff;
+}
+
+footer > p{
+    color: #ffffff;
+}

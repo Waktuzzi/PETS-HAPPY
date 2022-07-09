@@ -1,0 +1,985 @@
+{% extends 'core/plantilla_2.html' %}
+{% load static %}
+{% block contenido %}
+<div id="pagina_act">
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'home' %}">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Gatos</li>
+        </ol>
+    </nav>
+</div>
+
+<div id="productos">
+    <div id="intermedio">
+        <img src="{% static 'core/img/promo-producto-gato.jpg' %}" alt="" width="100%">
+    </div>
+    <br>
+    <h1>Comida</h1>
+    <h4>Encuentra comida de diferentes marcas, para todas las razas y edades</h4>
+    <div id="linea-comida">
+        <div class="row row-cols-2 row-cols-md-4 row-cols-xl-6 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/gatos/comida-gato-1.1.jpg' %}" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/comida-gato-1.2.jpg' %}" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Acana Cat Meadowlands 1.8kg</h5>
+                        <p class="card-text">Para Gatos de todas las edades. Con Pollo de corral, pescado de agua
+                            dulce, huevos del nido enteros</p>
+                        <p1 class="card-text">Alimento para Gatos de todas las edades. Con Pollo, pescado y huevos.
+                        </p1>
+                        <h6 class="card-text">Stock: 20</h6>
+                        <h6 class="card-text">$22.990</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/gatos/comida-gato-2.1.jpg' %}" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/comida-gato-2.2.jpg' %}" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/comida-gato-2.3.jpg' %}" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Alimento seco para gato PURINA® ONE®</h5>
+                        <p class="card-text">6kg. Alimento seco para gatitos y hembras gestantes/lactantes PURINA®
+                            ONE® con Pollo y Carne. </p>
+                        <p1 class="card-text">6kg. Alimento seco para gatitos y hembras gestantes/lactantes. </p1>
+                        <h6 class="card-text">Stock: 21</h6>
+                        <h6 class="card-text">$12.500</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/gatos/comida-gato-3.1.jpg' %}" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/comida-gato-3.2.jpg' %}" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/comida-gato-3.3.jpg' %}" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Royal Canin Kitten 2kg</h5>
+                        <p class="card-text">Alimento premium especial para gatitos de 4 a 12 meses. También para
+                            gatas en lactancia o gestantes.</p>
+                        <p1 class="card-text">Alimento especial para gatos de 4 a 12 meses. También para
+                            gatas en lactancia o gestantes.</p1>
+                        <h6 class="card-text">Stock: 13</h6>
+                        <h6 class="card-text">$15.500</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/gatos/comida-gato-1.1.jpg' %}" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/comida-gato-1.2.jpg' %}" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Acana Cat Meadowlands 1.8kg</h5>
+                        <p class="card-text">Para Gatos de todas las edades. Con Pollo de corral, pescado de agua
+                            dulce, huevos del nido enteros</p>
+                        <p1 class="card-text">Alimento para Gatos de todas las edades. Con Pollo, pescado y huevos.
+                        </p1>
+                        <h6 class="card-text">Stock: 20</h6>
+                        <h6 class="card-text">$22.990</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/gatos/comida-gato-2.1.jpg' %}" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/comida-gato-2.2.jpg' %}" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/comida-gato-2.3.jpg' %}" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Alimento seco para gato PURINA® ONE®</h5>
+                        <p class="card-text">6kg. Alimento seco para gatitos y hembras gestantes/lactantes PURINA®
+                            ONE® con Pollo y Carne. </p>
+                        <p1 class="card-text">6kg. Alimento seco para gatitos y hembras gestantes/lactantes. </p1>
+                        <h6 class="card-text">Stock: 21</h6>
+                        <h6 class="card-text">$12.500</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/gatos/comida-gato-3.1.jpg' %}" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/comida-gato-3.2.jpg' %}" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/comida-gato-3.3.jpg' %}" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Royal Canin Kitten 2kg</h5>
+                        <p class="card-text">Alimento premium especial para gatitos de 4 a 12 meses. También para
+                            gatas en lactancia o gestantes.</p>
+                        <p1 class="card-text">Alimento especial para gatos de 4 a 12 meses. También para
+                            gatas en lactancia o gestantes.</p1>
+                        <h6 class="card-text">Stock: 13</h6>
+                        <h6 class="card-text">$15.500</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/gatos/comida-gato-1.1.jpg' %}" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/comida-gato-1.2.jpg' %}" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Acana Cat Meadowlands 1.8kg</h5>
+                        <p class="card-text">Para Gatos de todas las edades. Con Pollo de corral, pescado de agua
+                            dulce, huevos del nido enteros</p>
+                        <p1 class="card-text">Alimento para Gatos de todas las edades. Con Pollo, pescado y huevos.
+                        </p1>
+                        <h6 class="card-text">Stock: 20</h6>
+                        <h6 class="card-text">$22.990</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/gatos/comida-gato-2.1.jpg' %}" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/comida-gato-2.2.jpg' %}" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/comida-gato-2.3.jpg' %}" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Alimento seco para gato PURINA® ONE®</h5>
+                        <p class="card-text">6kg. Alimento seco para gatitos y hembras gestantes/lactantes PURINA®
+                            ONE® con Pollo y Carne. </p>
+                        <p1 class="card-text">6kg. Alimento seco para gatitos y hembras gestantes/lactantes. </p1>
+                        <h6 class="card-text">Stock: 21</h6>
+                        <h6 class="card-text">$12.500</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/gatos/comida-gato-3.1.jpg' %}" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/comida-gato-3.2.jpg' %}" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/comida-gato-3.3.jpg' %}" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Royal Canin Kitten 2kg</h5>
+                        <p class="card-text">Alimento premium especial para gatitos de 4 a 12 meses. También para
+                            gatas en lactancia o gestantes.</p>
+                        <p1 class="card-text">Alimento especial para gatos de 4 a 12 meses. También para
+                            gatas en lactancia o gestantes.</p1>
+                        <h6 class="card-text">Stock: 13</h6>
+                        <h6 class="card-text">$15.500</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/gatos/comida-gato-1.1.jpg' %}" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/comida-gato-1.2.jpg' %}" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Acana Cat Meadowlands 1.8kg</h5>
+                        <p class="card-text">Para Gatos de todas las edades. Con Pollo de corral, pescado de agua
+                            dulce, huevos del nido enteros</p>
+                        <p1 class="card-text">Alimento para Gatos de todas las edades. Con Pollo, pescado y huevos.
+                        </p1>
+                        <h6 class="card-text">Stock: 20</h6>
+                        <h6 class="card-text">$22.990</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/gatos/comida-gato-2.1.jpg' %}" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/comida-gato-2.2.jpg' %}" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/comida-gato-2.3.jpg' %}" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Alimento seco para gato PURINA® ONE®</h5>
+                        <p class="card-text">6kg. Alimento seco para gatitos y hembras gestantes/lactantes PURINA®
+                            ONE® con Pollo y Carne. </p>
+                        <p1 class="card-text">6kg. Alimento seco para gatitos y hembras gestantes/lactantes. </p1>
+                        <h6 class="card-text">Stock: 21</h6>
+                        <h6 class="card-text">$12.500</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/gatos/comida-gato-3.1.jpg' %}" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/comida-gato-3.2.jpg' %}" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/comida-gato-3.3.jpg' %}" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Royal Canin Kitten 2kg</h5>
+                        <p class="card-text">Alimento premium especial para gatitos de 4 a 12 meses. También para
+                            gatas en lactancia o gestantes.</p>
+                        <p1 class="card-text">Alimento especial para gatos de 4 a 12 meses. También para
+                            gatas en lactancia o gestantes.</p1>
+                        <h6 class="card-text">Stock: 13</h6>
+                        <h6 class="card-text">$15.500</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="intermedio">
+        <img src="{% static 'core/img/despacho.jpg' %}" alt="" width="100%">
+    </div>
+    <h1>Juguetes</h1>
+    <h4>Encuentra juguetes de todo tipo para que tu gato pueda divertirse con ellos, tambien puedes encontrar
+        juguetes para que tu puedas jugar junto a tu gato</h4>
+    <div id="linea-juguetes">
+        <div class="row row-cols-2 row-cols-md-4 row-cols-xl-6 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/gatos/juguete-gato-1.1.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/juguete-gato-1.2.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/juguete-gato-1.3.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/juguete-gato-1.4.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">AFP Modern cat flash ball</h5>
+                        <p class="card-text">AFP Cat Flash Ball es un juguete para gatos en forma de pelota con
+                            luces que destellan en su interior al rebotar y que se apagan automáticamente.</p>
+                        <p1 class="card-text">Juguete para gatos en forma de pelota con
+                            luces.</p1>
+                        <h6 class="card-text">Stock: 12</h6>
+                        <h6 class="card-text">$3.990</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto/a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/gatos/juguete-gato-2.1.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/juguete-gato-2.2.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">AFP Furry ball long fluff varita</h5>
+                        <p class="card-text">Juguete para gatos colorido y suave.</p>
+                        <p1 class="card-text">Juguete para gatos colorido y suave.</p1>
+                        <h6 class="card-text">Stock: 9</h6>
+                        <h6 class="card-text">$6.490</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/gatos/juguete-gato-3.1.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/juguete-gato-3.2.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">TX Varita gato, variedad</h5>
+                        <p class="card-text">Juego para gato - 40 cm</p>
+                        <p1 class="card-text">Juego para gato - 40 cm</p1>
+                        <h6 class="card-text">Stock: 16</h6>
+                        <h6 class="card-text">$5.500</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/gatos/juguete-gato-1.1.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/juguete-gato-1.2.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/juguete-gato-1.3.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/juguete-gato-1.4.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">AFP Modern cat flash ball</h5>
+                        <p class="card-text">AFP Cat Flash Ball es un juguete para gatos en forma de pelota con
+                            luces que destellan en su interior al rebotar y que se apagan automáticamente.</p>
+                        <p1 class="card-text">Juguete para gatos en forma de pelota con
+                            luces.</p1>
+                        <h6 class="card-text">Stock: 12</h6>
+                        <h6 class="card-text">$3.990</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto/a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/gatos/juguete-gato-2.1.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/juguete-gato-2.2.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">AFP Furry ball long fluff varita</h5>
+                        <p class="card-text">Juguete para gatos colorido y suave.</p>
+                        <p1 class="card-text">Juguete para gatos colorido y suave.</p1>
+                        <h6 class="card-text">Stock: 9</h6>
+                        <h6 class="card-text">$6.490</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/gatos/juguete-gato-3.1.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/juguete-gato-3.2.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">TX Varita gato, variedad</h5>
+                        <p class="card-text">Juego para gato - 40 cm</p>
+                        <p1 class="card-text">Juego para gato - 40 cm</p1>
+                        <h6 class="card-text">Stock: 16</h6>
+                        <h6 class="card-text">$5.500</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/gatos/juguete-gato-1.1.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/juguete-gato-1.2.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/juguete-gato-1.3.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/juguete-gato-1.4.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">AFP Modern cat flash ball</h5>
+                        <p class="card-text">AFP Cat Flash Ball es un juguete para gatos en forma de pelota con
+                            luces que destellan en su interior al rebotar y que se apagan automáticamente.</p>
+                        <p1 class="card-text">Juguete para gatos en forma de pelota con
+                            luces.</p1>
+                        <h6 class="card-text">Stock: 12</h6>
+                        <h6 class="card-text">$3.990</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto/a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/gatos/juguete-gato-2.1.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/juguete-gato-2.2.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">AFP Furry ball long fluff varita</h5>
+                        <p class="card-text">Juguete para gatos colorido y suave.</p>
+                        <p1 class="card-text">Juguete para gatos colorido y suave.</p1>
+                        <h6 class="card-text">Stock: 9</h6>
+                        <h6 class="card-text">$6.490</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/gatos/juguete-gato-3.1.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/juguete-gato-3.2.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">TX Varita gato, variedad</h5>
+                        <p class="card-text">Juego para gato - 40 cm</p>
+                        <p1 class="card-text">Juego para gato - 40 cm</p1>
+                        <h6 class="card-text">Stock: 16</h6>
+                        <h6 class="card-text">$5.500</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/gatos/juguete-gato-1.1.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/juguete-gato-1.2.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/juguete-gato-1.3.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/juguete-gato-1.4.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">AFP Modern cat flash ball</h5>
+                        <p class="card-text">AFP Cat Flash Ball es un juguete para gatos en forma de pelota con
+                            luces que destellan en su interior al rebotar y que se apagan automáticamente.</p>
+                        <p1 class="card-text">Juguete para gatos en forma de pelota con
+                            luces.</p1>
+                        <h6 class="card-text">Stock: 12</h6>
+                        <h6 class="card-text">$3.990</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto/a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/gatos/juguete-gato-2.1.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/juguete-gato-2.2.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">AFP Furry ball long fluff varita</h5>
+                        <p class="card-text">Juguete para gatos colorido y suave.</p>
+                        <p1 class="card-text">Juguete para gatos colorido y suave.</p1>
+                        <h6 class="card-text">Stock: 9</h6>
+                        <h6 class="card-text">$6.490</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/gatos/juguete-gato-3.1.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/juguete-gato-3.2.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">TX Varita gato, variedad</h5>
+                        <p class="card-text">Juego para gato - 40 cm</p>
+                        <p1 class="card-text">Juego para gato - 40 cm</p1>
+                        <h6 class="card-text">Stock: 16</h6>
+                        <h6 class="card-text">$5.500</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="intermedio">
+        <img src="{% static 'core/img/promo-collar-gato.jpg' %}" alt="" width="100%">
+    </div>
+    <h1>Accesorios</h1>
+    <h4>Encuentra correas para pacear a tu gato, collares, camas y muchos otros accesorios para tu gato</h4>
+    <div id="linea-accesorios">
+        <div class="row row-cols-2 row-cols-md-4 row-cols-xl-6 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/gatos/accesorio-gato-1.1.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/accesorio-gato-1.2.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">TX Poste rascador C/Base para gato</h5>
+                        <p class="card-text">Poste rascador - 42 cms / rojo vino</p>
+                        <p1 class="card-text">Poste rascador - 42 cms / rojo vino</p1>
+                        <h6 class="card-text">Stock: 12</h6>
+                        <h6 class="card-text">$16.990</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto/a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/gatos/accesorio-gato-2.1.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/accesorio-gato-2.2.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Coastal glow in the Dark collar skulls</h5>
+                        <p class="card-text">El collar ajustable de seguridad para gatos Glow in the Dark hará que
+                            encontrar a tu gato en la oscuridad sea fácil.</p>
+                        <p1 class="card-text">collar de seguridad para gatos que brilla en la oscuridad.</p1>
+                        <h6 class="card-text">Stock: 10</h6>
+                        <h6 class="card-text">$8.990</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/gatos/accesorio-gato-3.1.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/accesorio-gato-3.2.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Catit vesper tunel-mat</h5>
+                        <p class="card-text">Con el túnel Catit Vesper, su gato tendrá incontables horas de
+                            diversión mientras juega y explora. Incluye un cojín para dormir y una abertura
+                            peek-a-boo con un borde de felpa y un pompón.</p>
+                        <p1 class="card-text">túnel Catit Vesper, Incluye un cojín para dormir y una abertura
+                            con un borde de felpa y un pompón.</p1>
+                        <h6 class="card-text">Stock: 18</h6>
+                        <h6 class="card-text">$37.990</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto!</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/gatos/accesorio-gato-1.1.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/accesorio-gato-1.2.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">TX Poste rascador C/Base para gato</h5>
+                        <p class="card-text">Poste rascador - 42 cms / rojo vino</p>
+                        <p1 class="card-text">Poste rascador - 42 cms / rojo vino</p1>
+                        <h6 class="card-text">Stock: 12</h6>
+                        <h6 class="card-text">$16.990</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto/a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/gatos/accesorio-gato-2.1.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/accesorio-gato-2.2.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Coastal glow in the Dark collar skulls</h5>
+                        <p class="card-text">El collar ajustable de seguridad para gatos Glow in the Dark hará que
+                            encontrar a tu gato en la oscuridad sea fácil.</p>
+                        <p1 class="card-text">collar de seguridad para gatos que brilla en la oscuridad.</p1>
+                        <h6 class="card-text">Stock: 10</h6>
+                        <h6 class="card-text">$8.990</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/gatos/accesorio-gato-3.1.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/accesorio-gato-3.2.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Catit vesper tunel-mat</h5>
+                        <p class="card-text">Con el túnel Catit Vesper, su gato tendrá incontables horas de
+                            diversión mientras juega y explora. Incluye un cojín para dormir y una abertura
+                            peek-a-boo con un borde de felpa y un pompón.</p>
+                        <p1 class="card-text">túnel Catit Vesper, Incluye un cojín para dormir y una abertura
+                            con un borde de felpa y un pompón.</p1>
+                        <h6 class="card-text">Stock: 18</h6>
+                        <h6 class="card-text">$37.990</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto!</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/gatos/accesorio-gato-1.1.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/accesorio-gato-1.2.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">TX Poste rascador C/Base para gato</h5>
+                        <p class="card-text">Poste rascador - 42 cms / rojo vino</p>
+                        <p1 class="card-text">Poste rascador - 42 cms / rojo vino</p1>
+                        <h6 class="card-text">Stock: 12</h6>
+                        <h6 class="card-text">$16.990</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto/a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/gatos/accesorio-gato-2.1.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/accesorio-gato-2.2.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Coastal glow in the Dark collar skulls</h5>
+                        <p class="card-text">El collar ajustable de seguridad para gatos Glow in the Dark hará que
+                            encontrar a tu gato en la oscuridad sea fácil.</p>
+                        <p1 class="card-text">collar de seguridad para gatos que brilla en la oscuridad.</p1>
+                        <h6 class="card-text">Stock: 10</h6>
+                        <h6 class="card-text">$8.990</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/gatos/accesorio-gato-3.1.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/accesorio-gato-3.2.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Catit vesper tunel-mat</h5>
+                        <p class="card-text">Con el túnel Catit Vesper, su gato tendrá incontables horas de
+                            diversión mientras juega y explora. Incluye un cojín para dormir y una abertura
+                            peek-a-boo con un borde de felpa y un pompón.</p>
+                        <p1 class="card-text">túnel Catit Vesper, Incluye un cojín para dormir y una abertura
+                            con un borde de felpa y un pompón.</p1>
+                        <h6 class="card-text">Stock: 18</h6>
+                        <h6 class="card-text">$37.990</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto!</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/gatos/accesorio-gato-1.1.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/accesorio-gato-1.2.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">TX Poste rascador C/Base para gato</h5>
+                        <p class="card-text">Poste rascador - 42 cms / rojo vino</p>
+                        <p1 class="card-text">Poste rascador - 42 cms / rojo vino</p1>
+                        <h6 class="card-text">Stock: 12</h6>
+                        <h6 class="card-text">$16.990</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto/a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/gatos/accesorio-gato-2.1.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/accesorio-gato-2.2.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Coastal glow in the Dark collar skulls</h5>
+                        <p class="card-text">El collar ajustable de seguridad para gatos Glow in the Dark hará que
+                            encontrar a tu gato en la oscuridad sea fácil.</p>
+                        <p1 class="card-text">collar de seguridad para gatos que brilla en la oscuridad.</p1>
+                        <h6 class="card-text">Stock: 10</h6>
+                        <h6 class="card-text">$8.990</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'core/img/gatos/accesorio-gato-3.1.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'core/img/gatos/accesorio-gato-3.2.png' %}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Catit vesper tunel-mat</h5>
+                        <p class="card-text">Con el túnel Catit Vesper, su gato tendrá incontables horas de
+                            diversión mientras juega y explora. Incluye un cojín para dormir y una abertura
+                            peek-a-boo con un borde de felpa y un pompón.</p>
+                        <p1 class="card-text">túnel Catit Vesper, Incluye un cojín para dormir y una abertura
+                            con un borde de felpa y un pompón.</p1>
+                        <h6 class="card-text">Stock: 18</h6>
+                        <h6 class="card-text">$37.990</h6>
+                    </div>
+                    <a href="{% url 'pago' %}" class="btn btn-primary">Comprar Producto!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

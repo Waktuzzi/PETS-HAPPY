@@ -1,0 +1,88 @@
+{% extends 'core/plantilla_2.html' %}
+{% load static %}
+{% block contenido %}
+<div class="container">
+    <br>
+    <div id="cuadros">
+        <div id="datosT">
+            <div id="imgpay">
+                <img src="https://www.pethome.cl/img/webpay.png" alt="...">
+            </div>
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">Nombres</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="" required>
+                    <div class="valid-feedback">
+                        Valido!
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="" required>
+                    <div class="valid-feedback">
+                        Valido!
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustomUsername" class="form-label">Pin de seguridad</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">cvc</span>
+                        <input type="text" class="form-control" id="validationCustomUsername"
+                            aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                            Invalido!
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="validationCustom03" class="form-label">N° tarjeta</label>
+                    <input type="text" class="form-control" id="validationCustom03" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid city.
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="validationCustom04" class="form-label">Region</label>
+                    <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">...</option>
+                        <option>Región Metropolitana de Santiago.</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please select a valid state.
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="validationCustom05" class="form-label">Codigo postal</label>
+                    <input type="text" class="form-control" id="validationCustom05" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid zip.
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck">
+                        Acepta los terminos y condiciones.
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck">
+                        Desea estar subscrito y participar con donaciones?
+                        </label>
+                    </div>
+                </div>
+                <div id="botonesC">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button class="btn btn-primary" type="submit">finalizar compra!</button>
+                </div>
+            </form>
+            <br>
+        </div>
+    </div>
+    <div id="tit2">
+        <h2> ¡Ya estamos a un paso de finalizar la compra! </h2>
+    </div>
+    <br>
+</div>
+{% endblock %}

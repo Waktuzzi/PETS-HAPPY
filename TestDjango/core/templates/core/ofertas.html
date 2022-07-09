@@ -1,0 +1,30 @@
+{% extends 'core/plantilla_2.html' %}
+{% load static %}
+{% block contenido %}
+
+
+<br>
+<div class="container">
+  {% if posts %}
+  <div class="row">
+    {% for oferta in posts %}
+
+      <div class="col-3">
+        <div class="card" style="width: 16rem;">
+          <img src="" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">{{oferta.nombre}}</h5>
+            <p class="card-text">Descuento: {{oferta.descuento}}%</p>
+          </div>
+        </div>
+
+      </div>
+
+    {% endfor %}
+  </div>
+</div>
+
+
+{% else %}
+{% endif %}
+{% endblock %}

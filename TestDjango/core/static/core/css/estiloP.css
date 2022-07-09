@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Passions+Conflict&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    height: 20vh;
+    width: 100%;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    height: 20vh;
+    width: 100%;
+    margin-bottom: auto;
+}
+
+footer>p{
+    color: #ffffff;
+}
+
+#titulo{
+    display: flex;
+    color: #ffffff;
+    font-family: 'Caveat', cursive;
+
+    margin: 0px 0px 0px 50px;
+}
+#titulo2{
+    display: flex;
+    color: #000000;
+    font-family: 'Caveat', cursive;
+    justify-content: center;
+}
+
+#cartas{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#tit{
+    color: #ffffff;
+    font-family: 'Caveat', cursive;
+
+    margin: 0px 0px 0px 50px;
+}
+
+#redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000 ;
+    padding: 5px;
+    color: white;
+}
+
+
+
+.red{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.red:hover{
+    background-color: #666666;
+    color: #ffffff;
+    transition-duration: 0.5s;
+}
+
+#redes>.red>a{
+    color: #ffffff;
+    text-decoration: none;
+    margin: 8px;
+}
+
+#pngA{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#productos{
+    margin: 30px;
+}
+
+#intermedio-perros{
+    display: flex;
+    justify-content: center;
+}
+
+#productos>h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Caveat', cursive;
+    font-size: 60px;
+}
+
+#productos>h4{
+    display: flex;
+    justify-content: center;
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    margin: 20px;
+}
+
+#productos>a{
+    justify-content: flex-end;
+}
+
+#pagina_act{
+    margin: 10px 0px 0px 30px;
+}
+
+#intermedio{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+#contenido{
+    display: flex;
+    justify-content: center;
+}
+
+#registro>h1{
+    font-family: 'Caveat', cursive;
+    font-size: 60px;
+}
+
+#registro{
+    padding: 5% 20% 5% 20%;
+}
+
+
+#tabla>h1{
+    font-family: 'Caveat', cursive;
+    font-size: 50px;
+}
+
+#tabla>a{
+    color: #000000;
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+}
+
+
+
+
+@media (min-width: 1250px) {  
+    .card-body>p1{
+        display: none;
+    }
+
+}
+
+@media (max-width: 1250px) {
+    .card-body>p{
+        display: none;
+    }
+ }
+
+@media (max-width: 950px) {
+    .red > p {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .card-body>p{
+        display: none;
+    }
+    .card-body>p1{
+        display: none;
+    }
+}
+
+@media (max-width: 670px) {
+    #tit{
+        display: none;
+    }
+    
+}
